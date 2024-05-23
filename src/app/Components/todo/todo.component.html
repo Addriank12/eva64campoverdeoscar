@@ -1,0 +1,12 @@
+<section>
+    <ul>
+        @for (item of Todos; track item.title) {
+            <li>
+                <strong>{{item.title}}</strong>
+                <p>{{item.content}}</p>
+                <button (click)="delete(item.title)" >Eliminar</button>
+            </li>
+        }
+    </ul>
+    <button routerLink="/newtodo">Añadir</button>
+</section>

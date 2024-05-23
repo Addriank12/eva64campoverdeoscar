@@ -1,0 +1,9 @@
+<section>
+    <form>
+        <input id="txtTitle"
+        name="txtTitle" type="text" placeholder="Titulo" [(ngModel)]="todo.title"  >
+        <input id="txtContent"
+        name="txtContent" type="text" placeholder="Descripcion" [(ngModel)]="todo.content" >
+        <button (click)="saveToDo()" routerLink="/todo" >Guardar</button>
+    </form>
+</section>
